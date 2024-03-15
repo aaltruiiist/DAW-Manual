@@ -101,10 +101,3 @@ Que ventajas aporta frente a otros sistemas de versiones.
 2. Gitg: Permite realizar operaciones Git comunes, revisar confirmaciones y obtener una vista previa de los archivos. Se puede además ver mensajes de confirmación. 
 Los archivos grandes suelen cargarse más lentamente y no muestran el historial.
 
-### Clientes Git para Windows
-1. Sourcetree: Se puede usar también para Mac. Se admiten archivos Git grandes y permite visualizarlos con diagramas de ramificación detallados. Tiene una búsqueda de confirmación local que permite encontrar cambios de archivo, confirmaciones y ramas. 
-2. Github: Se define básicamente como una extensión del flujo de trabajo en Github. Permite administrar el código sin necesidad de escribir comandos.
-
-### Clientes Git para Mac
-1. GitUp: Viene con un kit de herramientas que perite crear aplicaciones de Git. Tiene una función de Mapa en vivo que permite ver el progreso del proyecto sin actualizarlo. 
-2. GitBox: Con este cliente se pueden recuperar automáticamente nuevas confirmaciones del servidor, evitanto fusionar confirmaciones y conflictos.
