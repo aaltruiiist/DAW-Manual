@@ -158,3 +158,100 @@ Restaura un archivo que haya sido borrado anteriormente
 <br>
 
 **git show:** Muestra informacion sobre cualquier objeto de git
+
+
+### Comandos avanzados
+
+**git stash:** Guarda momentáneamente los cambios que no estan listos para ser confirmados. De esta forma puedes volver al proyecto más tarde.
+
+        git stash
+
+- *git stash save*: Almacena tus cambios en un stash y añade un nombre descriptivo.
+        
+        git stash save "Montando el entorno de test"
+
+- *git stash list*: Lista todos los stash.
+
+        git stash list
+
+- *git stash pop*: Recuperar el último stash.
+        
+        git stash pop
+
+- *git stash pop --index*: Recuperar un stash concreto.
+        
+        git stash pop --index 2
+
+- *git stash branch*: Crear una rama con los cambios que tienes
+
+        git stash branch F/branch-name.
+
+- *git stash clear*: Eliminar los stashes.
+
+        git stash clear
+
+- *git stash -p*: Almacenar en un stash sólo algunos archivos
+        
+        git stash -p
+<br>
+
+**git cherry-pick:** Se utiliza para aplicar el commit de una rama en otra.
+
+
+- *git cherry-pick <commit>*: Aplica el commit especificado en la rama actual.
+  
+         git cherry-pick abc123
+ 
+- *git cherry-pick --no-commit <commit>*: Aplica los cambios del commit especificado pero no realiza automáticamente el commit. Esto permite realizar modificaciones adicionales antes de realizar el commit.
+
+        git cherry-pick --no-commit abc123
+
+
+- *git cherry-pick -n <commit>*: Equivalente a git cherry-pick --no-commit.
+
+        git cherry-pick -n abc123
+ 
+- *git cherry-pick --edit <commit>*: Abre el mensaje de commit en un editor de texto antes de realizar el commit, permitiéndote modificar el mensaje del commit.
+
+        git cherry-pick --edit abc123
+
+<br>
+
+**git bisect:** Sirve para buscar errores en todos los commits del proyecto.
+
+1. Comenzamos utilizando el comando *git bisect start*:
+     - Este comando te llevaría al primer commit de tu proyecto.
+
+<br>
+
+2. Una vez allí tendremos que ir indicando si los commits son correctos o tienen algun fallo con los siguientes comandos:
+     - Para eso estan *git bisect good* y *git bisect bad*.
+<br>
+
+3. Cuando encuentres el fallo usando *git bisect reset*, para volver a la version más reciente de tu codigo.
+   
+# Bibliografía
+
+https://aprendeconalf.es/docencia/git/manual/manual-git.pdf
+
+https://unity.com/es/solutions/what-is-version-control
+
+https://ed.team/blog/que-es-git-y-como-funciona
+
+https://www.freecodecamp.org/espanol/news/aprende-los-conceptos-basicos-de-git-en-menos-de-10-minutos/
+
+https://www.atlassian.com/es/git/tutorials/inspecting-a-repository/git-tag#:~:text=Las%20etiquetas%20son%20referencias%20que,una%20rama%20que%20no%20cambia.
+
+https://www.atlassian.com/es/git/tutorials/why-git#:~:text=Una%20de%20las%20mayores%20ventajas,entre%20muchos%20usuarios%20de%20Git.
+
+https://www.siteground.es/kb/estructura-git-contenido-repositorio/
+
+https://www.hostinger.es/tutoriales/mejores-clientes-git-gui#1_QGit
+
+https://www.hostinger.es/tutoriales/comandos-de-git
+
+https://kinsta.com/es/blog/git-avanzado/
+
+https://desarrollowp.com/blog/tutoriales/aprende-git-de-manera-sencilla-comandos-avanzados/
+
+
